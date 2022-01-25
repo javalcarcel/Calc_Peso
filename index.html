@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peso en Planetas</title>
+</head>
+<body>
+  <h1>¿Quieres saber cual es tu peso en otro planeta ? </h1>
+  <p>En la tierra pesas distinto que en otro planeta</p>
+
+<script>
+  var usuario = prompt("Escribe tu peso actual en numeros: ");
+  var peso = parseInt(usuario);
+  var g_pluton = 0.62;
+  var g_mercurio = 3.7;
+  var g_marte = 3.721;
+  var g_venus = 8.87;
+  var g_urano = 8.87;
+  var g_tierra = 9.8;
+  var g_saturno = 10.44;
+  var g_jupiter = 24.79;
+  var g_sol = 274;
+  var peso_final ;
+  peso_final = (peso * g_marte) / g_tierra
+  // alert(peso_final + " es tu peso en Marte");
+  peso_final2 = (peso_final.toFixed(2)); // Se escriben solo 2 decimales
+  peso_final = parseInt(peso_final) // convierte flotantes en ENTEROS
+  document.write("Se registran <strong>" + peso_final2 + " kilos </strong> como tu peso en Marte");
+</script>
+</body>
+</html>
