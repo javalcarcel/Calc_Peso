@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peso en Planetas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
   <h1>¿Quieres saber cual es tu peso en otro planeta ? </h1>
@@ -12,7 +13,9 @@
 
 <script>
   var usuario = prompt("Escribe tu peso actual en numeros: ");
+  var planeta = prompt("Elige el planeta: \n1: Pluton, \n2:Jupiter");
   var peso = parseInt(usuario);
+  var mundo = parseInt(planeta);
   var g_pluton = 0.62;
   var g_mercurio = 3.7;
   var g_marte = 3.721;
